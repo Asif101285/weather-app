@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/cloudy.png" type="image/x-icon" />
+    <title>Current Weather-Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="searchContainer">
+      <form class="form">
+        <input
+          type="text"
+          name="cityInput"
+          id="cityInput"
+          placeholder="Enter Your City"
+          class="searchBox"
+          spellcheck="false"
+        />
+        <div class="searchIconBox">
+          <button type="submit">
+            <i class="bi bi-search searchIcon"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <audio autoplay src="" id="audio"></audio>
+    <div class="welcomeAnderror">
+      <p>Current Weather<br />Application</p>
+      <div>Enter the city to check weather</div>
+    </div>
+    <div class="weatherContent">
+      <div class="weatherIcon">
+        <img class="conditionImg" src="" alt="" />
+        <div class="iconDetail">
+          <div class="iconAndDescription">
+            <p class="description">Clear</p>
+            <p id="openWeatherIcon"><img src="" /></p>
+          </div>
+          <p class="feelsLike">22</p>
+        </div>
+      </div>
+      <h1 class="temperature">15°C</h1>
+      <h1 class="cityName">Multan</h1>
+      <div class="weatherDetail">
+        <div class="block">
+          <div>
+            <img src="./images/humidity.png" class="Img" alt="" />
+          </div>
+          <div class="Text">
+            <p id="humidity">Humidity</p>
+            <p id="humidityPercent">50%</p>
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <img src="./images/wind.png" class="Img" alt="" />
+          </div>
+          <div class="Text">
+            <p id="wind">Wind</p>
+            <p id="windPercent">50%</p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="visibilityImg">
+            <i class="bi bi-eye"></i>
+          </div>
+          <div class="Text">
+            <p id="visibility">Visibility</p>
+            <p id="visibilityValue">60</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
